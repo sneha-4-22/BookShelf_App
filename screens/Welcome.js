@@ -13,20 +13,15 @@ const Welcome = ({ navigation }) => {
             }}
             colors={[COLORS.secondary, COLORS.primary]}
         >
-            <View style={{ flex: 1 }}>
+            <View style={{ flex: 1 ,alignItems: 'center'}}>
                 <View>
                     <Image
                         source={require("../assets/hero1.jpg")}
                         style={{
                             height: 400,
                             width: 400,
-                            borderRadius: 20,
-                            position: "absolute",
-                            top: 5,
-                            transform: [
-                                { translateX: 4 },
-                                { translateY: 30 }
-                            ]
+                            borderRadius: 30,
+                            top: 5
                         }}
                     />   
                 </View>
@@ -53,14 +48,14 @@ const Welcome = ({ navigation }) => {
                             fontSize: 16,
                             color: COLORS.white,
                             marginVertical: 4
-                        }}>Engage in a Divine Conversation with Kanha Ji</Text>
+                        }}>Dive into the Literary Wonderland with our Bookshelf App</Text>
                         </View>
 
                     <Button
                         title="Join Now"
                         onPress={() => navigation.navigate("Signup")}
                         style={{
-                            marginTop: 22,
+                            marginTop: 10,
                             width: "100%"
                         }}
                     />

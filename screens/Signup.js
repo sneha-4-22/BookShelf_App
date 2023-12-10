@@ -25,7 +25,7 @@ const Signup = ({ navigation }) => {
                     <Text style={{
                         fontSize: 16,
                         color: COLORS.black
-                    }}>Connect with your Kanha Ji today!</Text>
+                    }}>Connect with Your Library Today! 📖✨</Text>
                 </View>
 
                 <View style={{ marginBottom: 12 }}>
