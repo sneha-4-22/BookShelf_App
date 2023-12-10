@@ -20,13 +20,13 @@ const Login = ({ navigation }) => {
                         marginVertical: 12,
                         color: COLORS.black
                     }}>
-                       Jai Shri Krishna! Welcome Back! 🙏
+                      Welcome Bibliophile! 📚 Let the Reading Adventures Begin! 🌟
                     </Text>
 
                     <Text style={{
                         fontSize: 16,
                         color: COLORS.black
-                    }}>Krishna's grace is here again! You have been missed! </Text>
+                    }}>Rediscover the Magic of Reading – Your Bookshelf Awaits! </Text>
                 </View>
 
                 <View style={{ marginBottom: 12 }}>
