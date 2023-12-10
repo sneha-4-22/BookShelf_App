@@ -17,7 +17,6 @@ const ShowBookScreen = ({ route }) => {
         const details = data.find((book) => book.isbn === isbn);
         setBookDetails(details);
 
-        // Assuming you want to encode the ISBN as QR code data
         setQRCodeImageUri(details?.isbn || '');
       } catch (error) {
         console.error('Error fetching book details:', error.message);
