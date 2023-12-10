@@ -45,20 +45,17 @@ const ShowBookScreen = ({ route }) => {
 
   return (
     <View style={styles.container}>
-      <View style={styles.detailsContainer}>
-        <Text style={styles.heading}>Book Details</Text>
-        <Text style={styles.label}>Book Name:</Text>
-        <Text style={styles.text}>{bookDetails?.bookName}</Text>
-        <Text style={styles.label}>ISBN:</Text>
-        <Text style={styles.text}>{bookDetails?.isbn}</Text>
-      </View>
-      <View style={styles.qrCodeContainer}>
-        <QRCode code="GeneratedQRCodeData" onDownload={handleDownloadQRCode} />
-      </View>
-      <TouchableOpacity style={styles.downloadButton} onPress={handleDownloadQRCode}>
-        <Text style={styles.buttonText}>Download QR Code</Text>
-      </TouchableOpacity>
+    <View style={styles.detailsContainer}>
+      <Text style={styles.heading}>Book Details</Text>
+      <Text style={styles.label}>Book Name:</Text>
+      <Text style={styles.text}>{bookDetails?.bookName}</Text>
+      <Text style={styles.label}>ISBN:</Text>
+      <Text style={styles.text}>{bookDetails?.isbn}</Text>
     </View>
+    <View style={styles.qrCodeContainer}>
+      <QRCode code="GeneratedQRCodeData" onDownload={handleDownloadQRCode} />
+    </View>
+  </View>
   );
 };
 
@@ -66,11 +63,13 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 16,
-    backgroundColor: '#F5F5F5',
+    backgroundColor: '#DFCCFB',
+    marginTop:44
   },
   detailsContainer: {
     backgroundColor: 'white',
     borderRadius: 8,
+    borderColor:'#BEADFA',
     padding: 16,
     marginBottom: 16,
     elevation: 3,
@@ -91,17 +90,9 @@ const styles = StyleSheet.create({
   },
   qrCodeContainer: {
     alignItems: 'center',
-  },
-  downloadButton: {
-    backgroundColor: '#40128B',
-    padding: 16,
-    borderRadius: 5,
-    alignItems: 'center',
-  },
-  buttonText: {
-    color: 'white',
-    fontSize: 16,
-  },
+    
+  }
+  ,
 });
 
 export default ShowBookScreen;
