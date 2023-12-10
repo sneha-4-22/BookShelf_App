@@ -25,7 +25,7 @@ const ShowAdminScreen = ({ navigation }) => {
   };
 
   const handleBookPress = (isbn) => {
-    navigation.navigate('ShowBookScreen', { isbn });
+    navigation.navigate('ShowBookScreen', { isbn : isbn });
   };
 
   return (
@@ -64,16 +64,17 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 16,
+    marginTop:44
   },
   searchInput: {
     height: 40,
-    borderColor: 'gray',
+    borderColor: '#35155D',
     borderWidth: 1,
     marginBottom: 10,
     paddingHorizontal: 10,
   },
   searchButton: {
-    backgroundColor: 'purple',
+    backgroundColor: '#40128B',
     padding: 20,
     borderRadius: 20,
     alignItems: 'center',
