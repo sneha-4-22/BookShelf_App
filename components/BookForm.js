@@ -17,9 +17,9 @@ const BookForm = ({ onSubmit }) => {
 
   return (
     <View style={styles.formContainer}>
-      <Text>Book Name</Text>
+      <Text style={styles.label}>Book Name</Text>
       <TextInput style={styles.input} value={bookName} onChangeText={setBookName} />
-      <Text>ISBN</Text>
+      <Text style={styles.label}>ISBN</Text>
       <TextInput style={styles.input} value={isbn} onChangeText={setIsbn} />
       <TouchableOpacity style={styles.submitButton} onPress={handleSubmit}>
         <Text style={styles.buttonText}>Submit</Text>
@@ -30,14 +30,20 @@ const BookForm = ({ onSubmit }) => {
 
 const styles = StyleSheet.create({
   formContainer: {
-    marginBottom: 16,
+    marginTop: 46,
+    marginBottom: 18,
   },
   input: {
     height: 40,
-    borderColor: 'gray',
+    borderColor: '#35155D',
     borderWidth: 1,
     marginBottom: 8,
     paddingHorizontal: 8,
+  },
+  label: {
+    fontWeight: 'bold',
+    marginBottom: 4,
+    color: 'black', 
   },
   submitButton: {
     backgroundColor: '#40128B',
@@ -48,6 +54,7 @@ const styles = StyleSheet.create({
   buttonText: {
     color: 'white',
   },
+  
 });
 
 export default BookForm;

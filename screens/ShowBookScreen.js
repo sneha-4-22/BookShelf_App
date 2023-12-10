@@ -14,7 +14,6 @@ const ShowBookScreen = ({ route }) => {
       <Text>Book Details</Text>
       <Text>{book.bookName}</Text>
       <Text>{book.isbn}</Text>
-      {/* Add other book details */}
       <QRCode code="GeneratedQRCodeData" onDownload={handleDownloadQRCode} />
     </View>
   );
