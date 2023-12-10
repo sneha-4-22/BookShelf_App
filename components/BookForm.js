@@ -38,6 +38,7 @@ const styles = StyleSheet.create({
     borderColor: '#35155D',
     borderWidth: 1,
     marginBottom: 8,
+    fontWeight: 'bold',
     paddingHorizontal: 8,
   },
   label: {
