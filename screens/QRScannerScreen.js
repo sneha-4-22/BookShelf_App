@@ -1,20 +1,19 @@
 import React from 'react';
-import { View, Text } from 'react-native';
-import QRScanner from '../components/QRScanner';
+import { View, Text, Button } from 'react-native';
 
-const QRScannerScreen = ({ navigation }) => {
-  const handleScan = (scannedData) => {
-    // Implement logic to handle the scanned data
-    console.log('Scanned Data:', scannedData);
-    // Redirect to the individual book page
-    navigation.navigate('ShowBook', { book: { /* book details based on scanned data */ } });
+const QRScanner = ({ onScan }) => {
+  const handleScan = () => {
+    
+    const scannedData = 'Scanned QR Code Data';
+    onScan(scannedData);
   };
 
   return (
     <View>
-      <QRScanner onScan={handleScan} />
+      <Text>QR Scanner Screen</Text>
+      <Button title="Scan QR Code" onPress={handleScan} />
     </View>
   );
 };
 
-export default QRScannerScreen;
+export default QRScanner;
