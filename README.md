@@ -8,6 +8,10 @@ Welcome to the BookShelf app! This mobile application allows users to manage the
 - **Welcome Screen and Login/Signup:**
   - Engaging welcome screen for users.
   - Secure login and signup functionality.
+    
+## App Preview 
+
+https://github.com/sneha-4-22/BookShelf_App/assets/112711068/d3a93c2b-224f-4ece-be06-29e1977ee12b
 
 ## Getting Started
 
@@ -25,7 +29,26 @@ Before you begin, ensure you have the following installed:
 
    ```bash
    git clone https://github.com/sneha-4-22/BookShelf_App.git
+   ```
+   
+2. Navigate to the project directory:
+    ```bash
+    cd BookShelf_App
+   ```
+3. Install dependencies:
 
-
-https://github.com/sneha-4-22/BookShelf_App/assets/112711068/d3a93c2b-224f-4ece-be06-29e1977ee12b
+   ```bash
+   npm install
+   ```
+   
+4. Run the app:
+   
+    ```bash
+    npm start
+   ```
+## Usage
+- Open the app and log in or sign up.
+- Explore your book collection or add new books.
+- Generate QR codes for books.
+- View and share book details using QR codes.
 
